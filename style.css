@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+header {
+    color: #fff;
+    background-color: #728308;
+    padding: 2rem 0;
+    text-align: center;
+    /*  fixed positioning  */
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+header h1 {
+    border: .8rem solid white;
+    /*Explain difference btw inline & inline-block*/
+    display: inline-block;
+    padding: .6rem 1.2rem;
+    border-radius: 3.6rem;
+}
+
+/* SECTION - BANNER */
+.banner {
+    position: relative;
+}
+/* Banner Image */
+.banner img {
+    /* To cover the entire section */
+    display: block;
+    width: 100%;
+}
+
+.banner .welcome {
+    font-size: 6rem;
+    padding: 3rem;
+    position: absolute;
+    left: 0;
+    top: 30%;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.banner .welcome span {
+    font-size: 1.5em;
+}
+
+/* Navigation Links */
+
+nav {
+    background: #f4f4f4;
+    padding: 2rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
