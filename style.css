@@ -74,7 +74,7 @@ nav ul {
     justify-content: space-between;
     list-style-type: none;
     font-size: 2rem;
-    padding: 2.5rem 6rem;
+    padding: .5rem 6rem;
 }
 
 nav li a {
@@ -119,3 +119,20 @@ article p::selection {
     background: #728308;
     color: #fff;
 }
+/* SECTION - IMAGES */
+section.images {
+    text-align: center;
+}
+
+section.images img {
+    width: 32rem;
+    margin: 0 1rem;
+    vertical-align: middle;
+    transition: all .2s ease-in-out;
+}
+
+section.images img:hover {
+    transform: scale(1.25);
+}
+
+/* Need to go back and make nav links sticky */
