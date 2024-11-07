@@ -1,138 +1,188 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%;
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
+  font-size: 62.5%;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
 }
 
 body {
-    font-size: 1.6rem;
+  font-size: 1.6rem;
 }
 
 header {
-    color: #fff;
-    background-color: #728308;
-    padding: 2rem 0;
-    text-align: center;
-    /*  fixed positioning  */
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 10;
+  color: #fff;
+  background-color: #728308;
+  padding: 2rem 0;
+  text-align: center;
+  /*  fixed positioning  */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
 }
 
 header h1 {
-    border: .8rem solid white;
-    /*Explain difference btw inline & inline-block*/
-    display: inline-block;
-    padding: .6rem 1.2rem;
-    border-radius: 3.6rem;
+  border: 0.8rem solid white;
+  /*Explain difference btw inline & inline-block*/
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border-radius: 3.6rem;
 }
 
 /* SECTION - BANNER */
 .banner {
-    position: relative;
+  position: relative;
 }
 
 /* Banner Image */
 .banner img {
-    /* To cover the entire section */
-    display: block;
-    width: 100%;
+  /* To cover the entire section */
+  display: block;
+  width: 100%;
 }
 
 .banner .welcome {
-    font-size: 6rem;
-    padding: 3rem;
-    position: absolute;
-    left: 0;
-    top: 30%;
-    color: white;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 10px;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 6rem;
+  padding: 3rem;
+  position: absolute;
+  left: 0;
+  top: 30%;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .banner .welcome span {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 /* Navigation Links */
 
 nav {
-    background: #f4f4f4;
+  background: #f4f4f4;
 }
 
 nav ul {
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    font-size: 2rem;
-    padding: .5rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  font-size: 2rem;
+  padding: 2.5rem 6rem;
 }
 
 nav li a {
-    text-decoration: none;
-    color: #4b4b4b;
+  text-decoration: none;
+  color: #4b4b4b;
 }
 
 nav li a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 nav li a.join {
-    color: #728308;
+  color: #728308;
 }
 
 /* Main Section */
 
 main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
 }
 
 article h2 {
-    color: #728308;
-    font-size: 4.2rem;
-    margin-bottom: 2rem;
+  color: #728308;
+  font-size: 4.2rem;
+  margin-bottom: 2rem;
 }
 
 article p {
-    font-size: 1.8rem;
-    line-height: 3rem;
-    color: #4b4b4b;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  color: #4b4b4b;
 }
 
 article p::first-line {
-    font-weight: 600;
-    font-size: 2rem;
+  font-weight: 600;
+  font-size: 2rem;
 }
 
 article p::selection {
-    background: #728308;
-    color: #fff;
+  background: #728308;
+  color: #fff;
 }
+
 /* SECTION - IMAGES */
 section.images {
-    text-align: center;
+  text-align: center;
+  padding: 4rem 0;
+  background-attachment: fixed;
+  background-image: url("https://i.ibb.co/NZYDg9K/ben10-background.png");
 }
 
 section.images img {
-    width: 32rem;
-    margin: 0 1rem;
-    vertical-align: middle;
-    transition: all .2s ease-in-out;
+  width: 32rem;
+  margin: 0 1rem;
+  vertical-align: middle;
+  transition: all 0.2s ease-in-out;
 }
 
 section.images img:hover {
-    transform: scale(1.25);
+  transform: scale(1.25);
 }
 
 /* Need to go back and make nav links sticky */
+
+section.newsletter {
+  background: #f4f4f4;
+  text-align: center;
+  padding: 60px 20px;
+  color: #4b4b4b;
+}
+
+section.newsletter h2 {
+  font-size: 3.4rem;
+  margin: 2rem 0;
+}
+
+section.newsletter p {
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+
+form input {
+  background-color: #f8f9fa;
+  margin: 2rem 0;
+  padding: 1.2rem 2rem;
+  font-size: 1.8rem;
+  border-radius: 2.8rem;
+  border: 4px solid #ced4da;
+  outline: none;
+}
+
+form input:focus:valid {
+  background-color: #f4fce3;
+  border: 4px solid #a9e34b;
+}
+
+form input:focus:invalid:not(:placeholder-shown) {
+  background-color: #fff5f5;
+  border: 4px solid #ff8787;
+}
+
+/* FOOTER */
+footer {
+  background: #728308;
+  color: white;
+  padding: 4rem;
+  font-size: 1.8rem;
+  text-align: center;
+}
