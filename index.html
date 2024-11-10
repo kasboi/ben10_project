@@ -1,124 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Very important!! My media queries for mobile was not working without this! -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ben10 Fan Club</title>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
     <!-- Favicon Images -->
     <link
-            rel="icon"
-            type="image/png"
-            href="/img/favicon/favicon-48x48.png"
-            sizes="48x48"
+      rel="icon"
+      type="image/png"
+      href="/img/favicon/favicon-48x48.png"
+      sizes="48x48"
     />
-    <link rel="icon" type="image/svg+xml" href="/img/favicon/favicon.svg"/>
-    <link rel="shortcut icon" href="/img/favicon/favicon.ico"/>
+    <link rel="icon" type="image/svg+xml" href="/img/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/img/favicon/favicon.ico" />
     <link
-            rel="apple-touch-icon"
-            sizes="180x180"
-            href="/img/favicon/apple-touch-icon.png"
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/img/favicon/apple-touch-icon.png"
     />
-    <link rel="manifest" href="/img/favicon/site.webmanifest"/>
+    <link rel="manifest" href="/img/favicon/site.webmanifest" />
     <!--    Inter Font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-            rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
     />
-</head>
-<body>
-<header>
-    <h1>Ben10 Fan Club</h1>
-</header>
-<section class="banner">
-    <img
-            sizes="(max-width: 1364px) 100vw, 1364px"
-            srcset="
-        ./img/ben10_banner_f7cqbr_c_scale,w_200.jpg 200w,
-        ./img/ben10_banner_f7cqbr_c_scale,w_954.jpg 954w,
-        ./img/ben10_banner_f7cqbr_c_scale,w_1364.jpg 1364w"
-            src="./img/ben10_banner_f7cqbr_c_scale,w_1364.jpg"
-            alt="welcome banner"
-    />
-    <div class="welcome">
-        <h2>Welcome to <br/><span>Ben10 Club</span></h2>
-    </div>
-</section>
-<!--Navigation Links-->
-<nav class="main-nav">
-    <ul>
+  </head>
+  <body>
+    <header>
+      <h1>Ben10 Fan Club</h1>
+    </header>
+    <section class="banner">
+      <img
+        sizes="(max-width: 1364px) 100vw, 1364px"
+        srcset="
+          ./img/ben10_banner_f7cqbr_c_scale,w_200.jpg   200w,
+          ./img/ben10_banner_f7cqbr_c_scale,w_954.jpg   954w,
+          ./img/ben10_banner_f7cqbr_c_scale,w_1364.jpg 1364w
+        "
+        src="./img/ben10_banner_f7cqbr_c_scale,w_1364.jpg"
+        alt="welcome banner"
+      />
+      <div class="welcome">
+        <h2>Welcome to <br /><span>Ben10 Club</span></h2>
+      </div>
+    </section>
+    <!--Navigation Links-->
+    <nav class="main-nav">
+      <ul>
         <li><a href="#" class="join">Join the club</a></li>
         <li><a href="#">Latest news</a></li>
         <li><a href="#">New movies</a></li>
         <li><a href="#">Contact</a></li>
-    </ul>
-</nav>
-<!-- Main Section -->
-<main>
-    <article>
+      </ul>
+    </nav>
+    <!-- Main Section -->
+    <main>
+      <article>
         <h2>Echo Echo, It's Doctor Tennyson</h2>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae
-            possimus sapiente, ducimus asperiores error eum ipsam quasi
-            repellendus iste earum laboriosam nesciunt officiis atque rerum quos
-            incidunt aspernatur velit voluptates. Lorem ipsum, dolor sit amet
-            consectetur adipisicing elit. Praesentium labore perferendis minus
-            incidunt doloribus, eligendi repudiandae earum dignissimos est neque
-            deserunt consequatur. Repudiandae autem maxime magnam eveniet! Atque,
-            suscipit amet. Lorem ipsum, dolor sit amet consectetur adipisicing
-            elit. Praesentium labore perferendis minus incidunt doloribus,
-            eligendi repudiandae earum dignissimos est neque deserunt consequatur.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae
+          possimus sapiente, ducimus asperiores error eum ipsam quasi
+          repellendus iste earum laboriosam nesciunt officiis atque rerum quos
+          incidunt aspernatur velit voluptates. Lorem ipsum, dolor sit amet
+          consectetur adipisicing elit. Praesentium labore perferendis minus
+          incidunt doloribus, eligendi repudiandae earum dignissimos est neque
+          deserunt consequatur. Repudiandae autem maxime magnam eveniet! Atque,
+          suscipit amet. Lorem ipsum, dolor sit amet consectetur adipisicing
+          elit. Praesentium labore perferendis minus incidunt doloribus,
+          eligendi repudiandae earum dignissimos est neque deserunt consequatur.
         </p>
-    </article>
-</main>
-<!--  Images Section  -->
-<section class="images">
-    <img
-            sizes="(max-width: 728px) 100vw, 728px"
-            srcset="
-./img/accelerator_kcs7jx_c_scale,w_200.png 200w,
-./img/accelerator_kcs7jx_c_scale,w_510.png 510w,
-./img/accelerator_kcs7jx_c_scale,w_728.png 728w"
-            src="accelerator_vntgmg_c_scale,w_728.png"
-            alt="ben10 accelerator">
-    <img
-            sizes="(max-width: 690px) 100vw, 690px"
-            srcset="
-./img/diamond_kpgqiq_c_scale,w_200.png 200w,
-./img/diamond_kpgqiq_c_scale,w_488.png 488w,
-./img/diamond_kpgqiq_c_scale,w_690.png 690w"
-            src="diamond_kyejdd_c_scale,w_690.png"
-            alt="ben10 diamond">
-    <img
-            sizes="(max-width: 736px) 100vw, 736px"
-            srcset="
-./img/four_arms_fe1q1i_c_scale,w_200.png 200w,
-./img/four_arms_fe1q1i_c_scale,w_517.png 517w,
-./img/four_arms_fe1q1i_c_scale,w_736.png 736w"
-            src="four_arms_fe1q1i_c_scale,w_736.png"
-            alt="ben10 four arms">
-</section>
-<section class="newsletter">
-    <h2>Join Today!</h2>
-    <p>
+      </article>
+    </main>
+    <!--  Images Section  -->
+    <section class="images">
+      <img
+        sizes="(max-width: 728px) 100vw, 728px"
+        srcset="
+          ./img/accelerator_kcs7jx_c_scale,w_200.png 200w,
+          ./img/accelerator_kcs7jx_c_scale,w_510.png 510w,
+          ./img/accelerator_kcs7jx_c_scale,w_728.png 728w
+        "
+        src="accelerator_vntgmg_c_scale,w_728.png"
+        alt="ben10 accelerator"
+      />
+      <img
+        sizes="(max-width: 690px) 100vw, 690px"
+        srcset="
+          ./img/diamond_kpgqiq_c_scale,w_200.png 200w,
+          ./img/diamond_kpgqiq_c_scale,w_488.png 488w,
+          ./img/diamond_kpgqiq_c_scale,w_690.png 690w
+        "
+        src="diamond_kyejdd_c_scale,w_690.png"
+        alt="ben10 diamond"
+      />
+      <img
+        sizes="(max-width: 736px) 100vw, 736px"
+        srcset="
+          ./img/four_arms_fe1q1i_c_scale,w_200.png 200w,
+          ./img/four_arms_fe1q1i_c_scale,w_517.png 517w,
+          ./img/four_arms_fe1q1i_c_scale,w_736.png 736w
+        "
+        src="four_arms_fe1q1i_c_scale,w_736.png"
+        alt="ben10 four arms"
+      />
+    </section>
+    <section class="newsletter">
+      <h2>Join Today!</h2>
+      <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus,
         commodi eos facere harum iure mollitia! Beatae eveniet incidunt
         provident qui.
-    </p>
-    <form>
+      </p>
+      <form>
         <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Enter email & hit enter"
-                minlength="6"
-                required
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter email & hit enter"
+          minlength="6"
+          required
         />
-    </form>
-</section>
-<footer>
-    <p class="copyright">Copyright &copy; 2024 Ben10 Club</p>
-</footer>
-</body>
+      </form>
+    </section>
+    <footer>
+      <p class="copyright">Copyright &copy; 2024 Ben10 Club</p>
+    </footer>
+  </body>
 </html>

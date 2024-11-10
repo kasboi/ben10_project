@@ -67,6 +67,8 @@ header h1 {
 
 nav {
   background: #f4f4f4;
+  position: sticky;
+  top: 10.4rem;
 }
 
 nav ul {
@@ -185,4 +187,91 @@ footer {
   padding: 4rem;
   font-size: 1.8rem;
   text-align: center;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1024px) {
+  .banner .welcome {
+    font-size: 4.5rem;
+    padding: 2rem;
+    top: 35%;
+  }
+
+  section.images {
+    padding: 3rem 0;
+    background-image: url("./img/ben10_background_m7zx9p_c_scale\,w_1212.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+  }
+
+  section.images img {
+    width: 28rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+
+  nav ul li {
+    flex-basis: 45%;
+  }
+
+  section.images {
+    background-image: url("./img/ben10_background_m7zx9p_c_scale\,w_843.png");
+  }
+
+  section.images img {
+    width: 20rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .banner .welcome {
+    position: static;
+    color: initial;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
+    background-color: #f4fce3;
+  }
+  section.images img {
+    width: 16rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    position: static;
+  }
+
+  nav {
+    position: static;
+  }
+  nav ul li {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  article h2 {
+    font-size: 3.5rem;
+  }
+
+  article p {
+    font-size: 1.6rem;
+  }
+
+  section.images img {
+    width: 10rem;
+  }
+
+  section.newsletter {
+    padding: 4rem 2rem;
+  }
+  section.newsletter p {
+    font-size: 1.6rem;
+  }
 }
